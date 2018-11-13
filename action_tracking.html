@@ -1,0 +1,23 @@
+
+<!--- Oranyelab Action Tracking Code Start ---->
+<script src="https://track.oranyelab.com/scripts/tracking.js"></script>
+<!--- Oranyelab Action Tracking Code End ---->
+
+
+<!-- contoh implementasi --->
+<button id="button1">klik button 1 - metode add event listener</button><br/>
+<!--- metode 1--->
+<button id="button2" onclick="actiontrack('button2')"> klik button 2 - metode on click</button>
+
+
+<script>
+//metode 2 -  track otomatis ketika di load | gunakan prefix "page-" jika ingin tracking halaman
+actiontrack('page-impression');
+
+//metode 3
+var myEl = document.getElementById('button1');
+myEl.addEventListener('click', function() {
+    actiontrack('button1');
+}, false);
+</script>
+

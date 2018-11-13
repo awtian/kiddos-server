@@ -1,0 +1,87 @@
+var express = require('express');
+var https = require('https');
+var http = require('http');
+var userCount = 0;
+var fs = require('fs');
+
+var waktu = new Date().toISOString().replace(/T/, ' ').replace(/\..+/, '');
+
+var options = {
+  key: fs.readFileSync('/etc/letsencrypt/live/hit.oranyelab.com/privkey.pem'),
+  cert: fs.readFileSync('/etc/letsencrypt/live/hit.oranyelab.com/fullchain.pem')
+};
+
+var app = express();
+
+app.get('/pixel.jpg', function (req, res) {
+   //userCount++;
+
+   //res.writeHead(200, { 'Content-Type': 'text/plain;  charset=utf-8' });
+
+   //res.write('Hello!\n');
+
+    //res.write('We have had ' + userCount + ' visits!\n');
+
+   //res.end();
+   
+   var
+    hex1pixeljpeg = 'ffd8ffe000104a46494600010101006000600000ffe1001645786966000049492a0008000000000000000000ffdb00430001010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101ffdb00430101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101ffc00011080001000103012200021101031101ffc400150001010000000000000000000000000000000affc40014100100000000000000000000000000000000ffc40014010100000000000000000000000000000000ffc40014110100000000000000000000000000000000ffda000c03010002110311003f00bf8001ffd9',
+    buffer1PixelJpeg = new Buffer(hex1pixeljpeg, 'hex');
+
+  res
+    .set({
+      'Content-Type': 'image/jpeg',
+      'Content-Length': buffer1PixelJpeg.length
+    })
+	
+.end(buffer1PixelJpeg,'binary');
+
+var Datastore = require('nedb')
+  , db = new Datastore({ filename: '/home/ubuntu/myapp/data.db' });
+db.loadDatabase(function (err) {
+
+});
+
+var idsite = req.param('id');
+
+var doc = { idsite: idsite
+               , logtime: waktu
+               };
+
+
+db.insert(doc, function (err, newDoc) {
+
+});
+
+//end expressjs
+})
+
+app.get('/', function (req, res) {
+   
+var Datastore = require('nedb')
+  , db = new Datastore({ filename: '/home/ubuntu/myapp/data.db' });
+db.loadDatabase(function (err) {
+
+});
+var idsite = req.param('id');
+
+db.count({ idsite: idsite }, function (err, count) {
+  
+});
+
+   userCount++;
+
+   res.writeHead(200, { 'Content-Type': 'text/plain;  charset=utf-8' });
+
+   res.write('Hello!\n');
+
+   res.write('We have had ' + userCount + ' visits!\n');
+
+   res.end();
+})
+
+
+http.createServer(app).listen(80);
+https.createServer(options, app).listen(443);
+
+

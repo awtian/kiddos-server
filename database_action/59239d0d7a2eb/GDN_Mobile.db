@@ -1,0 +1,6 @@
+{"_id":"button1","idsite":"59239d0d7a2eb","counter":9,"first_hit":"25-05-2017, 03:20:55","last_hit":"25-05-2017, 03:21:00","createdAt":{"$$date":1495700455137},"updatedAt":{"$$date":1495700460170}}
+{"_id":"button2","idsite":"59239d0d7a2eb","counter":9,"first_hit":"25-05-2017, 03:20:54","last_hit":"25-05-2017, 03:20:59","createdAt":{"$$date":1495700454225},"updatedAt":{"$$date":1495700459752}}
+{"_id":"button44","idsite":"59239d0d7a2eb","counter":9,"first_hit":"25-05-2017, 03:21:34","last_hit":"25-05-2017, 03:21:38","createdAt":{"$$date":1495700494355},"updatedAt":{"$$date":1495700498061}}
+{"_id":"button8","idsite":"59239d0d7a2eb","counter":5,"first_hit":"25-05-2017, 03:21:18","last_hit":"25-05-2017, 03:21:20","createdAt":{"$$date":1495700478521},"updatedAt":{"$$date":1495700480813}}
+{"_id":"button9","idsite":"59239d0d7a2eb","counter":5,"first_hit":"25-05-2017, 03:21:18","last_hit":"25-05-2017, 03:21:21","createdAt":{"$$date":1495700478124},"updatedAt":{"$$date":1495700481107}}
+{"_id":"page-impression","idsite":"59239d0d7a2eb","counter":4,"first_hit":"25-05-2017, 03:20:50","last_hit":"25-05-2017, 03:21:40","createdAt":{"$$date":1495700450704},"updatedAt":{"$$date":1495700500828}}

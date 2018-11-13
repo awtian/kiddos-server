@@ -1,0 +1,6 @@
+$(document).ready(function () {
+    if(window.location.href.indexOf("dashboard.html") > -1) {
+       $("#listcampaign").hide(0).w(11000);
+   
+    }
+}); 

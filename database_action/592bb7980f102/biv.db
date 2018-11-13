@@ -1,0 +1,3 @@
+{"_id":"button1","idsite":"592bb7980f102","counter":11,"first_hit":"30-05-2017, 11:09:26","last_hit":"30-05-2017, 11:10:39","createdAt":{"$$date":1496117366734},"updatedAt":{"$$date":1496117439127}}
+{"_id":"button2","idsite":"592bb7980f102","counter":1,"first_hit":"30-05-2017, 11:09:32","last_hit":"30-05-2017, 11:09:32","createdAt":{"$$date":1496117372156},"updatedAt":{"$$date":1496117372156}}
+{"_id":"page-impression","idsite":"592bb7980f102","counter":1,"first_hit":"29-05-2017, 04:38:37","last_hit":"29-05-2017, 04:38:37","createdAt":{"$$date":1496050717024},"updatedAt":{"$$date":1496050717024}}
