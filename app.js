@@ -11,8 +11,8 @@ process.env.TZ = 'Asia/Jakarta';
 
 
 var options = {
-  key: fs.readFileSync('/privkey.pem'),
-  cert: fs.readFileSync('/fullchain.pem')
+  key: fs.readFileSync('./privkey.pem'),
+  cert: fs.readFileSync('./fullchain.pem')
 };
 
 var app = express();
