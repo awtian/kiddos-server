@@ -10,10 +10,10 @@ var fs = require('fs');
 process.env.TZ = 'Asia/Jakarta';
 
 
-// var options = {
-//   key: fs.readFileSync('/etc/letsencrypt/live/track.oranyelab.com/privkey.pem'),
-//   cert: fs.readFileSync('/etc/letsencrypt/live/track.oranyelab.com/fullchain.pem')
-// };
+var options = {
+  key: fs.readFileSync('/etc/letsencrypt/live/track.oranyelab.com/privkey.pem'),
+  cert: fs.readFileSync('/etc/letsencrypt/live/track.oranyelab.com/fullchain.pem')
+};
 
 var app = express();
 
@@ -196,7 +196,7 @@ var id_time = moment().format('DD-MM-YYYY');
 
 
 http.createServer(app).listen(3000);
-// https.createServer(options, app).listen(443);
+https.createServer(options, app).listen(443);
 
 
 
